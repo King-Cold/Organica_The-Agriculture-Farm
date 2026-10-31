@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Organica: ganado vacuno, productos lácteos y frutas de la huerta.">
+  <title>Organica — The Agriculture Farm</title>  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="movil.css">
+</head>
+
+<body>
+  <header class="encabezado" id="inicio">
+    <div class="contenedor encabezado-contenido">
+      <figure class="logo">
+        <img
+          src="img/logo_arriba.png">
+      </figure>
+
+      <a class="icono-menu" id="btn_menu" aria-label="Mostrar menú">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </a>
+
+      <nav
+        class="navegacion"
+        id="caja_menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#productos">Nuestros Productos</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="portada">
+      <div class="contenedor portada-contenido">
+        <h1>
+          Cultivamos verduras orgánicas y las traemos a tu mesa
+        </h1>
+      </div>
+    </section>
+
+    <section class="servicios">
+      <div class="contenedor">
+        <header class="titulo-seccion">
+          <h2>Nuestros Servicios</h2>
+          <p>Lo que ofrecemos</p>
+        </header>
+
+        <div class="lista-servicios" id="productos">
+          <article class="tarjeta">
+            <figure class="imagen-servicio">
+              <img
+                src="img/icono1.png"
+                alt="Silueta de una vaca">
+            </figure>
+
+            <h3>Ganado Vacuno</h3>
+
+            <p>
+              Carne de res producida sin ingeniería genética,
+              uso de radiación ionizante o lodos de depuradora.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <figure class="imagen-servicio">
+              <img
+                src="img/icono2.png"
+                alt="Botella de leche y queso">
+            </figure>
+
+            <h3>Productos Lácteos</h3>
+
+            <p>
+              Los productos lácteos como la leche, el queso y
+              el yogur contienen los nutrientes que su cuerpo necesita.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <figure class="imagen-servicio">
+              <img
+                src="img/icono3.png"
+                alt="Fruta y zanahoria">
+            </figure>
+
+            <h3>Frutas de la Huerta</h3>
+
+            <p>
+              Cubre todo lo que necesita saber para cultivar
+              y comercializar con éxito sus propias frutas
+              orgánicas de huerta.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="contenedor pie-contenido">
+      <figure class="logo-pie">
+        <img
+          src="img/logo_abajo.png">
+      </figure>
+    </div>
+  </footer>
+  <script>
+    $("#btn_menu").click(function(){
+      $("#caja_menu").slideToggle();
+    });
+  </script>
+</body>
+</html>
